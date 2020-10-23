@@ -46,7 +46,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ATs-38-p0U"/>
+                    <navigationItem key="navigationItem" title="Arithmetics" id="ATs-38-p0U"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,7 +102,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="R07-ay-A0l"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VV0-lT-pkU"/>
+                    <navigationItem key="navigationItem" title="GCD" id="VV0-lT-pkU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAJ-xG-pgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
