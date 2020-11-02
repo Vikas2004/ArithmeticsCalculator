@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F4A56BB2549DEC60019FC4D /* ArithCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A56BA2549DEC60019FC4D /* ArithCalculator.swift */; };
+		3F4A56BE254FB3B20019FC4D /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A56BD254FB3B20019FC4D /* GCDViewController.swift */; };
 		3F803E9725433B5F002F399D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F803E9625433B5F002F399D /* AppDelegate.swift */; };
 		3F803E9925433B5F002F399D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F803E9825433B5F002F399D /* SceneDelegate.swift */; };
 		3F803E9B25433B5F002F399D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F803E9A25433B5F002F399D /* FirstViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F4A56BA2549DEC60019FC4D /* ArithCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithCalculator.swift; sourceTree = "<group>"; };
+		3F4A56BD254FB3B20019FC4D /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
 		3F803E9325433B5F002F399D /* ArithmeticsCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArithmeticsCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F803E9625433B5F002F399D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F803E9825433B5F002F399D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				3F803EA125433B67002F399D /* Assets.xcassets */,
 				3F803EA325433B67002F399D /* LaunchScreen.storyboard */,
 				3F803EA625433B68002F399D /* Info.plist */,
+				3F4A56BA2549DEC60019FC4D /* ArithCalculator.swift */,
+				3F4A56BD254FB3B20019FC4D /* GCDViewController.swift */,
 			);
 			path = ArithmeticsCalculator;
 			sourceTree = "<group>";
@@ -142,9 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F803E9D25433B5F002F399D /* SecondViewController.swift in Sources */,
+				3F4A56BB2549DEC60019FC4D /* ArithCalculator.swift in Sources */,
 				3F803E9B25433B5F002F399D /* FirstViewController.swift in Sources */,
 				3F803E9725433B5F002F399D /* AppDelegate.swift in Sources */,
 				3F803E9925433B5F002F399D /* SceneDelegate.swift in Sources */,
+				3F4A56BE254FB3B20019FC4D /* GCDViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
