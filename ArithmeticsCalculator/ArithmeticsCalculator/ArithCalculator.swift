@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ArithCalculator {
     
@@ -65,5 +66,9 @@ class ArithCalculator {
         }else{
             return 1;
         }
+    }
+    
+    func squareRoot(num:Double) -> Double{
+        return sqrt(num)
     }
 }
