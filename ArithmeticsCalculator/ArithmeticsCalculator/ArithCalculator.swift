@@ -52,5 +52,18 @@ class ArithCalculator {
 //        return res;
 //    }
     
-//        func leastCommonMultiple(
+        func leastCommonMultiple(a:Int,b:Int) -> Int{
+            
+            let lcm:Int = (a*b)/(greatestCommonFactor(a: a, b: b))
+            return lcm;
+        }
+    
+    func factorial(num:Int) -> Int{
+        
+        if (num >= 1){
+            return num * factorial(num: num-1);
+        }else{
+            return 1;
+        }
+    }
 }
