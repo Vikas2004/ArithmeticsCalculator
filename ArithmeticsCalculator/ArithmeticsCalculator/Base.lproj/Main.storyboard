@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Factorial-->
         <scene sceneID="HaC-wa-4zS">
             <objects>
-                <viewController id="sTB-3N-Wnu" sceneMemberID="viewController">
+                <viewController title="Factorial" id="sTB-3N-Wnu" customClass="FactorialViewController" customModule="ArithmeticsCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HS9-rb-1xw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,11 +35,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
+                                    <action selector="calculate:" destination="sTB-3N-Wnu" eventType="touchUpInside" id="O3F-eC-jXw"/>
                                     <action selector="calculate:" destination="bxI-ox-WcH" eventType="touchUpInside" id="ZeR-dH-bPr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqt-Sv-6tZ">
-                                <rect key="frame" x="35" y="308" width="172" height="21"/>
+                                <rect key="frame" x="35" y="244" width="172" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -49,10 +50,15 @@
                         <viewLayoutGuide key="safeArea" id="aSQ-LN-1Nh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Factorial" id="O3F-KL-PTr"/>
+                    <connections>
+                        <outlet property="answerLBL" destination="Dqt-Sv-6tZ" id="6wX-SY-51W"/>
+                        <outlet property="numTF" destination="m8g-gh-PKT" id="rOa-V0-fda"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIS-Ch-n7F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2150" y="-1119"/>
+            <point key="canvasLocation" x="1673" y="-1039"/>
         </scene>
         <!--Arithmetics-->
         <scene sceneID="hNz-n2-bh7">
@@ -85,6 +91,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Factorial"/>
+                                <connections>
+                                    <segue destination="sTB-3N-Wnu" kind="show" id="fs8-15-XCP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUE-hG-EQi">
                                 <rect key="frame" x="20" y="236" width="291" height="62"/>
