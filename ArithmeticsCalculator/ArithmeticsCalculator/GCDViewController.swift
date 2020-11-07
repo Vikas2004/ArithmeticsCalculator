@@ -17,8 +17,15 @@ class GCDViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        self.title = "GCD"
 
-
+    }
+    
+    func alertMessage(title:String, message:String){
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        ac.addAction(action)
+        self.present(ac,animated: true, completion: nil)
     }
     
 
@@ -34,24 +41,19 @@ class GCDViewController: UIViewController {
             }else{
                 // If user enters invalid value this pop-ups
                 print("user entered invalid values")
-                let alertController = UIAlertController(title: "", message: "Invalid value specified", preferredStyle: .alert)
-
-                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-                alertController.addAction(action)
-                self.show(alertController, sender: nil)
+                alertMessage(title: "Invaid value", message: "Invalid value specified")
             }
-            
             
         }
         else{
             // If user does not enter any value this pop-ups
         print("user not entered values")
-            let alertController = UIAlertController(title: "No value", message: "No value specified", preferredStyle: .alert)
-
-            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alertController.addAction(action)
-            self.show(alertController, sender: nil)
+            
+            alertMessage(title: "No value", message: "No value specified")
         }
     }
+    
+
+    
     
 }

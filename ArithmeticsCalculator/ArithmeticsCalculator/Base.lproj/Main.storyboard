@@ -23,7 +23,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Greatest common factor"/>
                                 <connections>
-                                    <segue destination="bxI-ox-WcH" kind="show" id="h0t-r4-3HI"/>
+                                    <segue destination="bxI-ox-WcH" kind="show" id="50c-ST-xzx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFV-OC-B1B">
@@ -42,7 +42,7 @@
                                 <rect key="frame" x="20" y="236" width="291" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Power of given number"/>
+                                <state key="normal" title="Square root"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
@@ -52,12 +52,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1727" y="-345"/>
+            <point key="canvasLocation" x="1695" y="-321"/>
         </scene>
         <!--GCD-->
         <scene sceneID="QJu-bf-nMw">
             <objects>
-                <viewController title="GCD" id="bxI-ox-WcH" customClass="GCDViewController" customModule="ArithmeticsCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GCDViewController" title="GCD" id="bxI-ox-WcH" customClass="GCDViewController" customModule="ArithmeticsCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x0d-69-JOE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAJ-xG-pgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2572" y="-345"/>
+            <point key="canvasLocation" x="2604" y="-321"/>
         </scene>
         <!--History-->
         <scene sceneID="rfq-et-e8L">
