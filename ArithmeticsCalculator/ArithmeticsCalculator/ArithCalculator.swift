@@ -69,6 +69,10 @@ class ArithCalculator {
     }
     
     func squareRoot(num:Double) -> Double{
-        return sqrt(num)
+        
+        var squareRoot:Double = sqrt(num)
+        //In 2 decimal places
+        squareRoot = Double(round(100*squareRoot)/100)
+        return squareRoot
     }
 }
