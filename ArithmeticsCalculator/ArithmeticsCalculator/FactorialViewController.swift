@@ -35,11 +35,11 @@ class FactorialViewController: UIViewController {
             if let num = Int(numTF.text!){
                 let answer:Int = ArithCalculator.shared.factorial(num: num)
                 
-                
-                    answerLBL.text = "Answer: \(answer)"
+                let answerText: String = "Answer: \(answer)";
+                    answerLBL.text = answerText
                 
                 let query: String = "Factorial of  \(num)"
-                ArithCalculator.shared.history(query: query, answer: answer)
+                ArithCalculator.shared.history(query: query, answer: answerText)
                     
                 
             }else{

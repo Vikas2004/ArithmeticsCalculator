@@ -35,10 +35,12 @@ class LCMViewController: UIViewController {
             
             if let firstNum = Int(firstNumTF.text!), let secondNum:Int = Int(secondNumTF.text!){
                 let answer:Int = ArithCalculator.shared.leastCommonMultiple(a: firstNum, b: secondNum)
-                    answerLBL.text = "Answer: \(answer)"
+
+                let answerText: String = "Answer: \(answer)";
+                    answerLBL.text = answerText
                 
                 let query: String = "LCM of two numbers \(firstNum)&\(secondNum)"
-                ArithCalculator.shared.history(query: query, answer: answer)
+                ArithCalculator.shared.history(query: query, answer: answerText)
                     
                 
             }else{

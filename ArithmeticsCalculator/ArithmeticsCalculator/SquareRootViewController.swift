@@ -34,10 +34,13 @@ class SquareRootViewController: UIViewController {
         if (numTF.text != ""){
             
             if let num = Double(numTF.text!){
-                let result:Double = ArithCalculator.shared.squareRoot(num: num)
+                let answer:Double = ArithCalculator.shared.squareRoot(num: num)
                 
+                let answerText: String = "Answer: \(answer)";
+                    answerLBL.text = answerText
                 
-                    answerLBL.text = "Answer: \(result)"
+                let query: String = "Square root of  \(num)"
+                ArithCalculator.shared.history(query: query, answer: answerText)
                     
                 
             }else{

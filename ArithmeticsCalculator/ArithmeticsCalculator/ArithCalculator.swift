@@ -16,7 +16,7 @@ class ArithCalculator {
     
     struct Result{
         var query:String
-        var answer:Int
+        var answer:String
     }
     
     //Array of result structs
@@ -71,7 +71,7 @@ class ArithCalculator {
     }
     
 
-    func history(query:String,answer:Int){
+    func history(query:String,answer:String){
         
         Results.append(Result(query: query, answer: answer));
     }
