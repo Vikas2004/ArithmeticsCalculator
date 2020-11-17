@@ -62,7 +62,7 @@ class HistoryTableViewController: UITableViewController {
         
         // It updates labels of cell with requied values
         cell.queriesLBL.text = "\(hist.query)"
-        cell.answersLBL.text = "Answer:  \(hist.answer)"
+        cell.answersLBL.text = "\(hist.answer)"
         
         return cell
     }
