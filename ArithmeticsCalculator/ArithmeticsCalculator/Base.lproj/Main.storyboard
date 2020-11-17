@@ -368,7 +368,7 @@
                             <outlet property="delegate" destination="7P3-sN-akU" id="3Cv-KH-NLL"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="History" image="second" selectedImage="second" id="MdY-16-ndp"/>
+                    <tabBarItem key="tabBarItem" title="History" image="doc.text.fill" catalog="system" selectedImage="doc.text.fill" id="MdY-16-ndp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HV-fX-qnQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -392,11 +392,11 @@
             </objects>
             <point key="canvasLocation" x="-87" y="108"/>
         </scene>
-        <!--Find-->
+        <!--Functions-->
         <scene sceneID="ezE-Gh-0qn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Egr-MS-S7N" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Find" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Functions" image="f.cursive.circle.fill" catalog="system" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tN6-Y5-r5h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -413,7 +413,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="doc.text.fill" catalog="system" width="56" height="64"/>
+        <image name="f.cursive.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>
