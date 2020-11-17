@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrL-Lz-TnL">
-                                <rect key="frame" x="35" y="92" width="111.5" height="21"/>
+                                <rect key="frame" x="35" y="92" width="110.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,7 +28,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KP8-1H-N2G">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KP8-1H-N2G">
                                 <rect key="frame" x="155.5" y="175" width="64" height="30"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
@@ -41,7 +43,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aSQ-LN-1Nh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="m8g-gh-PKT" firstAttribute="leading" secondItem="HrL-Lz-TnL" secondAttribute="trailing" constant="48.5" id="L7q-9f-Mqr"/>
                             <constraint firstItem="KP8-1H-N2G" firstAttribute="centerX" secondItem="HS9-rb-1xw" secondAttribute="centerX" id="Pj2-cC-ixp"/>
@@ -53,7 +56,6 @@
                             <constraint firstItem="HrL-Lz-TnL" firstAttribute="leading" secondItem="aSQ-LN-1Nh" secondAttribute="leading" constant="35" id="wqV-y1-KvU"/>
                             <constraint firstItem="m8g-gh-PKT" firstAttribute="top" secondItem="aSQ-LN-1Nh" secondAttribute="top" constant="42" id="ySA-Ab-FOQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aSQ-LN-1Nh"/>
                     </view>
                     <navigationItem key="navigationItem" title="Factorial" id="O3F-KL-PTr"/>
                     <connections>
@@ -73,23 +75,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcb-Z5-Xps">
-                                <rect key="frame" x="77.5" y="88" width="220" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcb-Z5-Xps">
+                                <rect key="frame" x="76.5" y="88" width="222" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Greatest common factor"/>
                                 <connections>
                                     <segue destination="bxI-ox-WcH" kind="show" id="50c-ST-xzx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFV-OC-B1B">
-                                <rect key="frame" x="81.5" y="140" width="212" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFV-OC-B1B">
+                                <rect key="frame" x="81" y="140" width="213" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Least common multiple"/>
                                 <connections>
                                     <segue destination="x6v-wl-Elc" kind="show" id="6U3-d0-eWj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oU-RE-NZA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oU-RE-NZA">
                                 <rect key="frame" x="148.5" y="187" width="78" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Factorial"/>
@@ -97,8 +99,8 @@
                                     <segue destination="sTB-3N-Wnu" kind="show" id="fs8-15-XCP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUE-hG-EQi">
-                                <rect key="frame" x="134.5" y="236" width="106" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUE-hG-EQi">
+                                <rect key="frame" x="134" y="236" width="107" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Square root"/>
                                 <connections>
@@ -106,7 +108,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Zcb-Z5-Xps" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="53p-O3-v6y"/>
                             <constraint firstItem="oUE-hG-EQi" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="8YV-5b-iZd"/>
@@ -117,7 +120,6 @@
                             <constraint firstItem="oUE-hG-EQi" firstAttribute="top" secondItem="5oU-RE-NZA" secondAttribute="bottom" constant="11" id="pn2-kL-gpX"/>
                             <constraint firstItem="Zcb-Z5-Xps" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="44" id="z3h-CL-3Yp"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" title="Arithmetics" id="ATs-38-p0U"/>
                 </viewController>
@@ -134,7 +136,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter First Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sp6-BV-24L">
-                                <rect key="frame" x="27" y="80" width="149" height="21"/>
+                                <rect key="frame" x="27" y="80" width="148" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -145,7 +147,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Second number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJp-H0-Rdc">
-                                <rect key="frame" x="27" y="152" width="171" height="21"/>
+                                <rect key="frame" x="27" y="152" width="170" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -155,7 +157,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnt-aQ-nkU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnt-aQ-nkU">
                                 <rect key="frame" x="155.5" y="218" width="64" height="30"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
@@ -169,7 +171,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="R07-ay-A0l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Vk4-GY-KuW" firstAttribute="leading" secondItem="sp6-BV-24L" secondAttribute="trailing" constant="23" id="5RY-Ie-YF2"/>
                             <constraint firstItem="xJp-H0-Rdc" firstAttribute="leading" secondItem="R07-ay-A0l" secondAttribute="leading" constant="27" id="7t4-ji-pgA"/>
@@ -184,7 +187,6 @@
                             <constraint firstItem="OuP-mM-n5a" firstAttribute="top" secondItem="fnt-aQ-nkU" secondAttribute="bottom" constant="18" id="r2g-sL-3tl"/>
                             <constraint firstItem="sp6-BV-24L" firstAttribute="top" secondItem="R07-ay-A0l" secondAttribute="top" constant="36" id="yXW-FW-wCD"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="R07-ay-A0l"/>
                     </view>
                     <navigationItem key="navigationItem" title="GCD" id="VV0-lT-pkU"/>
                     <connections>
@@ -206,7 +208,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter First Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmz-vQ-Jp0">
-                                <rect key="frame" x="16" y="77" width="149" height="21"/>
+                                <rect key="frame" x="16" y="77" width="148" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -217,7 +219,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Second number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xF-VV-JHW">
-                                <rect key="frame" x="16" y="155" width="171" height="21"/>
+                                <rect key="frame" x="16" y="155" width="170" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -227,7 +229,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eml-FM-o7e">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eml-FM-o7e">
                                 <rect key="frame" x="155.5" y="235" width="64" height="30"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
@@ -242,7 +244,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rPp-Zj-A0j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ak7-Td-w50" firstAttribute="leading" secondItem="bmz-vQ-Jp0" secondAttribute="trailing" constant="30" id="0H8-v3-DSy"/>
                             <constraint firstItem="1xF-VV-JHW" firstAttribute="leading" secondItem="rPp-Zj-A0j" secondAttribute="leading" constant="16" id="B7q-KR-aeT"/>
@@ -257,7 +260,6 @@
                             <constraint firstItem="1xF-VV-JHW" firstAttribute="top" secondItem="bmz-vQ-Jp0" secondAttribute="bottom" constant="57" id="tWT-De-5I1"/>
                             <constraint firstItem="bmz-vQ-Jp0" firstAttribute="top" secondItem="rPp-Zj-A0j" secondAttribute="top" constant="33" id="um3-LX-QE7"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="rPp-Zj-A0j"/>
                     </view>
                     <navigationItem key="navigationItem" title="LCM" id="Oj2-Yw-5qe"/>
                     <connections>
@@ -279,7 +281,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZU-1t-EQi">
-                                <rect key="frame" x="31" y="92" width="111.5" height="21"/>
+                                <rect key="frame" x="31" y="92" width="110.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -289,7 +291,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVJ-UR-Ofe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVJ-UR-Ofe">
                                 <rect key="frame" x="155.5" y="175" width="64" height="30"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
@@ -305,7 +307,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sXk-4X-cTQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="WZU-1t-EQi" firstAttribute="top" secondItem="sXk-4X-cTQ" secondAttribute="top" constant="48" id="9yD-MW-zA1"/>
                             <constraint firstItem="u92-9b-o1l" firstAttribute="leading" secondItem="sXk-4X-cTQ" secondAttribute="leading" constant="31" id="A4x-LK-Vf6"/>
@@ -317,7 +320,6 @@
                             <constraint firstItem="DVJ-UR-Ofe" firstAttribute="top" secondItem="sXk-4X-cTQ" secondAttribute="top" constant="131" id="cbW-Xs-PQh"/>
                             <constraint firstItem="WZU-1t-EQi" firstAttribute="leading" secondItem="sXk-4X-cTQ" secondAttribute="leading" constant="31" id="jb4-OG-W9k"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="sXk-4X-cTQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Square root" id="4v1-Oj-Ysq"/>
                     <connections>
@@ -332,28 +334,35 @@
         <!--History-->
         <scene sceneID="rfq-et-e8L">
             <objects>
-                <tableViewController id="7P3-sN-akU" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mgC-Eb-ofD">
+                <tableViewController id="7P3-sN-akU" customClass="HistoryTableViewController" customModule="ArithmeticsCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mgC-Eb-ofD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hka-Fd-ezN">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="55" id="4Un-SR-Ob3">
-                                <rect key="frame" x="0.0" y="28" width="375" height="55"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" rowHeight="55" id="4Un-SR-Ob3" customClass="HistoryTableViewCell" customModule="ArithmeticsCalculator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Un-SR-Ob3" id="Kxe-6T-TIR">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer: 12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLg-6j-qni">
-                                            <rect key="frame" x="16" y="26" width="84" height="21"/>
+                                            <rect key="frame" x="16" y="26" width="105" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GCD of two number 24&amp;60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKu-ij-dlb">
-                                            <rect key="frame" x="16" y="4" width="209" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GCD of two numbers 24&amp;60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKu-ij-dlb">
+                                            <rect key="frame" x="16" y="4" width="225" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -361,6 +370,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="answersLBL" destination="SLg-6j-qni" id="hJk-e8-U2q"/>
+                                    <outlet property="queriesLBL" destination="hKu-ij-dlb" id="oII-zO-6UP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -372,7 +385,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HV-fX-qnQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786.95652173913049" y="499.55357142857139"/>
+            <point key="canvasLocation" x="786.39999999999998" y="498.80059970014997"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -413,7 +426,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="doc.text.fill" catalog="system" width="56" height="64"/>
-        <image name="f.cursive.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="doc.text.fill" catalog="system" width="115" height="128"/>
+        <image name="f.cursive.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

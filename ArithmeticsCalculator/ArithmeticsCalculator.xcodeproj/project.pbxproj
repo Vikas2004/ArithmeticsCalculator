@@ -12,6 +12,8 @@
 		3F4A56C3255690D70019FC4D /* LCMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A56C2255690D70019FC4D /* LCMViewController.swift */; };
 		3F4A56C62556934C0019FC4D /* FactorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A56C52556934C0019FC4D /* FactorialViewController.swift */; };
 		3F4A56C9255695AC0019FC4D /* SquareRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A56C8255695AC0019FC4D /* SquareRootViewController.swift */; };
+		3F4A56DE256377E30019FC4D /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A56DD256377E30019FC4D /* HistoryTableViewController.swift */; };
+		3F4A56E1256378050019FC4D /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A56E0256378040019FC4D /* HistoryTableViewCell.swift */; };
 		3F803E9725433B5F002F399D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F803E9625433B5F002F399D /* AppDelegate.swift */; };
 		3F803E9925433B5F002F399D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F803E9825433B5F002F399D /* SceneDelegate.swift */; };
 		3F803E9B25433B5F002F399D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F803E9A25433B5F002F399D /* FirstViewController.swift */; };
@@ -27,6 +29,8 @@
 		3F4A56C2255690D70019FC4D /* LCMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCMViewController.swift; sourceTree = "<group>"; };
 		3F4A56C52556934C0019FC4D /* FactorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorialViewController.swift; sourceTree = "<group>"; };
 		3F4A56C8255695AC0019FC4D /* SquareRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareRootViewController.swift; sourceTree = "<group>"; };
+		3F4A56DD256377E30019FC4D /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		3F4A56E0256378040019FC4D /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		3F803E9325433B5F002F399D /* ArithmeticsCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArithmeticsCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F803E9625433B5F002F399D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F803E9825433B5F002F399D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 			children = (
 				3F803E9625433B5F002F399D /* AppDelegate.swift */,
 				3F803E9825433B5F002F399D /* SceneDelegate.swift */,
+				3F4A56E0256378040019FC4D /* HistoryTableViewCell.swift */,
+				3F4A56DD256377E30019FC4D /* HistoryTableViewController.swift */,
 				3F803E9A25433B5F002F399D /* FirstViewController.swift */,
 				3F803E9C25433B5F002F399D /* SecondViewController.swift */,
 				3F803E9E25433B5F002F399D /* Main.storyboard */,
@@ -160,9 +166,11 @@
 				3F4A56BB2549DEC60019FC4D /* ArithCalculator.swift in Sources */,
 				3F803E9B25433B5F002F399D /* FirstViewController.swift in Sources */,
 				3F4A56C9255695AC0019FC4D /* SquareRootViewController.swift in Sources */,
+				3F4A56DE256377E30019FC4D /* HistoryTableViewController.swift in Sources */,
 				3F803E9725433B5F002F399D /* AppDelegate.swift in Sources */,
 				3F4A56C62556934C0019FC4D /* FactorialViewController.swift in Sources */,
 				3F803E9925433B5F002F399D /* SceneDelegate.swift in Sources */,
+				3F4A56E1256378050019FC4D /* HistoryTableViewCell.swift in Sources */,
 				3F4A56C3255690D70019FC4D /* LCMViewController.swift in Sources */,
 				3F4A56BE254FB3B20019FC4D /* GCDViewController.swift in Sources */,
 			);

@@ -12,20 +12,20 @@ import UIKit
 class ArithCalculator {
     
     private var numArray:[Int]
-    private var answer:Int64
+    private var answer:Int
     
-    struct result{
-        var numArray:[Int]
-        var answer:Int64
+    struct Result{
+        var query:String
+        var answer:Int
     }
     
     //Array of result structs
-    private var results:[result]
+    private var Results:[Result]
     
     init(){
         answer = 0
         numArray = []
-        results = []
+        Results = []
     }
     
     
@@ -41,17 +41,11 @@ class ArithCalculator {
         return greatestCommonFactor(a:b % a,b:a);
     }
     
+    func gcd(a:Int,b:Int) -> Int{
+        print("inside gcd function");
+        return greatestCommonFactor(a: a, b: b);
+    }
     
-//    func gcdArray() -> Int{
-//        var res:Int = numArray[0];
-//        for i in stride(from: 1, to:  numArray.count, by: 1){
-//            res = greatestCommonFactor(a:numArray[i],b:res);
-//            if(res == 1){
-//                return 1;
-//            }
-//        }
-//        return res;
-//    }
     
         func leastCommonMultiple(a:Int,b:Int) -> Int{
             
@@ -75,4 +69,22 @@ class ArithCalculator {
         squareRoot = Double(round(100*squareRoot)/100)
         return squareRoot
     }
+    
+
+    func history(query:String,answer:Int){
+        
+        Results.append(Result(query: query, answer: answer));
+    }
+    
+    func results (index:Int) -> Result{
+        return Results[index]
+    }
+    
+    func resultsCount() -> Int{
+        return Results.count;
+    }
+    
+    
+    
+
 }
