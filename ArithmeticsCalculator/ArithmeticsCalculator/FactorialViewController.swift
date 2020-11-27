@@ -8,8 +8,10 @@
 
 import UIKit
 
+// The Factorial View Controller
 class FactorialViewController: UIViewController {
 
+    // The UITextField and UILabel to enter the number and display the answer
     @IBOutlet weak var numTF: UITextField!
     @IBOutlet weak var answerLBL: UILabel!
 
@@ -19,7 +21,7 @@ class FactorialViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    // The AlertMessage Function
     func alertMessage(title:String, message:String){
         let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -27,7 +29,7 @@ class FactorialViewController: UIViewController {
         self.present(ac,animated: true, completion: nil)
     }
     
-    
+    // The calculate function for the calculate button
     @IBAction func calculate(_ sender: Any) {
         
         if (numTF.text != ""){
