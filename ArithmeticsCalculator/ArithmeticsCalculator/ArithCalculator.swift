@@ -58,13 +58,20 @@ class ArithCalculator {
         }
     
     // the Factorial function
-    func factorial(num:Int) -> Int{
+    func factorial(num:Int) -> Int64{
         
-        if (num >= 1){
-            return num * factorial(num: num-1);
-        }else{
-            return 1;
+//        if (num >= 1){
+//            return num * factorial(num: num-1);
+//        }else{
+//            return 1;
+//        }
+        var out:Int64 = 1;
+        for n in 1...num {
+            out = out * Int64(n);
         }
+        
+        return out;
+        
     }
     
     // The squareRoot function

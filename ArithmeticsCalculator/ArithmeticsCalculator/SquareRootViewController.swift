@@ -35,6 +35,8 @@ class SquareRootViewController: UIViewController {
         if (numTF.text != ""){
             
             if let num = Double(numTF.text!){
+                
+                if(num>=0){
                 let answer:Double = ArithCalculator.shared.squareRoot(num: num)
                 
                 let answerText: String = "Answer: \(answer)";
@@ -42,6 +44,10 @@ class SquareRootViewController: UIViewController {
                 
                 let query: String = "Square root of  \(num)"
                 ArithCalculator.shared.history(query: query, answer: answerText)
+                }else{
+                    // If user enters negative number this alert pop-ups
+                    alertMessage(title: "Negative number", message: "Invalid value specified")
+                }
                     
                 
             }else{

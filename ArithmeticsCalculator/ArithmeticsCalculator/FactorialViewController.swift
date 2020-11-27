@@ -35,18 +35,30 @@ class FactorialViewController: UIViewController {
         if (numTF.text != ""){
             
             if let num = Int(numTF.text!){
-                let answer:Int = ArithCalculator.shared.factorial(num: num)
+                
+                if(num>=0 && num<=20){
+                
+                
+                let answer:Int64 = ArithCalculator.shared.factorial(num: num)
                 
                 let answerText: String = "Answer: \(answer)";
                     answerLBL.text = answerText
                 
                 let query: String = "Factorial of  \(num)"
                 ArithCalculator.shared.history(query: query, answer: answerText)
+                }
+                else if(num<0){
+                    // If user enters negative number this alert pop-ups
+                    alertMessage(title: "Negative number", message: "Invalid value specified")
+                }
+                else{
+                    // If user enters number greater than 20 this alert pop-ups
+                    alertMessage(title: "High number", message: "Enter number below 20")
+                }
                     
                 
             }else{
                 // If user enters invalid value this pop-ups
-                print("user entered invalid values")
                 alertMessage(title: "Invaid value", message: "Invalid value specified")
             }
             
