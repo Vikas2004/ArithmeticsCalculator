@@ -9,11 +9,14 @@
 import Foundation
 import UIKit
 
+// The ArithCalculator Class
 class ArithCalculator {
     
+    // Variable declarations
     private var numArray:[Int]
     private var answer:Int
     
+    //Struct of results
     struct Result{
         var query:String
         var answer:String
@@ -22,16 +25,17 @@ class ArithCalculator {
     //Array of result structs
     private var Results:[Result]
     
+    //Initialization of the variables
     init(){
         answer = 0
         numArray = []
         Results = []
     }
     
-    
+    // using immutable variable shared for the function of ArithCalculator
   static let shared = ArithCalculator()
     
-    
+    // The gereatestCommonFactor function to find the GCD of the number
     
     func greatestCommonFactor(a:Int,b:Int) -> Int{
         
@@ -46,13 +50,14 @@ class ArithCalculator {
         return greatestCommonFactor(a: a, b: b);
     }
     
-    
+    // The leastCommonMultiple function
         func leastCommonMultiple(a:Int,b:Int) -> Int{
             
             let lcm:Int = (a*b)/(greatestCommonFactor(a: a, b: b))
             return lcm;
         }
     
+    // the Factorial function
     func factorial(num:Int) -> Int{
         
         if (num >= 1){
@@ -62,6 +67,7 @@ class ArithCalculator {
         }
     }
     
+    // The squareRoot function
     func squareRoot(num:Double) -> Double{
         
         var squareRoot:Double = sqrt(num)
@@ -70,12 +76,12 @@ class ArithCalculator {
         return squareRoot
     }
     
-
+// The history function
     func history(query:String,answer:String){
         
         Results.append(Result(query: query, answer: answer));
     }
-    
+    // The function for results
     func results (index:Int) -> Result{
         return Results[index]
     }
