@@ -8,8 +8,10 @@
 
 import UIKit
 
+// View Controller of LCM
 class LCMViewController: UIViewController {
     
+    // The UITextfields and UILabel declarations
     @IBOutlet weak var firstNumTF: UITextField!
     @IBOutlet weak var secondNumTF: UITextField!
     @IBOutlet weak var answerLBL: UILabel!
@@ -20,7 +22,7 @@ class LCMViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    //The alertMessage function
     func alertMessage(title:String, message:String){
         let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -28,7 +30,7 @@ class LCMViewController: UIViewController {
         self.present(ac,animated: true, completion: nil)
     }
     
-    
+    // The calculate function for the calculate button
     @IBAction func calculate(_ sender: Any) {
         
         if (firstNumTF.text != "") && (secondNumTF.text != ""){
