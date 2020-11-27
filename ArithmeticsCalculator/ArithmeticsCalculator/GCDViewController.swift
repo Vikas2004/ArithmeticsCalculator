@@ -9,7 +9,7 @@
 import UIKit
 
 class GCDViewController: UIViewController {
-    
+    // The UI textfields and UIlablel
     @IBOutlet weak var firstNumTF: UITextField!
     @IBOutlet weak var secondNumTF: UITextField!
     @IBOutlet weak var answerLBL: UILabel!
@@ -20,6 +20,7 @@ class GCDViewController: UIViewController {
 
     }
     
+    // Alert Message function to display the alert Message
     func alertMessage(title:String, message:String){
         let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -27,7 +28,7 @@ class GCDViewController: UIViewController {
         self.present(ac,animated: true, completion: nil)
     }
     
-
+// The calculate function for the calculate button
     @IBAction func calculate(_ sender: Any) {
         
         if (firstNumTF.text != "") && (secondNumTF.text != ""){
