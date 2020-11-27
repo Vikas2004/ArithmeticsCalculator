@@ -8,9 +8,10 @@
 
 import UIKit
 
+// HistoryTavleView Cell class
 class HistoryTableViewCell: UITableViewCell {
     
-
+// UI Labels for the queries and answers
     @IBOutlet weak var queriesLBL: UILabel!
     @IBOutlet weak var answersLBL: UILabel!
     
