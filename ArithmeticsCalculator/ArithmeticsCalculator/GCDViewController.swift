@@ -9,6 +9,7 @@
 import UIKit
 
 class GCDViewController: UIViewController {
+    
     // The UI textfields and UIlablel
     @IBOutlet weak var firstNumTF: UITextField!
     @IBOutlet weak var secondNumTF: UITextField!
@@ -34,25 +35,25 @@ class GCDViewController: UIViewController {
         if (firstNumTF.text != "") && (secondNumTF.text != ""){
             
             if let firstNum = Int(firstNumTF.text!), let secondNum:Int = Int(secondNumTF.text!){
-                    let answer:Int = ArithCalculator.shared.greatestCommonFactor(a: firstNum, b: secondNum)
+                
+                let answer:Int = ArithCalculator.shared.greatestCommonFactor(a: firstNum, b: secondNum)
+                
                 let answerText: String = "Answer: \(answer)";
                     answerLBL.text = answerText
                 
                 let query: String = "GCD of two numbers \(firstNum)&\(secondNum)"
+                // Storing data to history
                 ArithCalculator.shared.history(query: query, answer: answerText)
                     
                 
             }else{
-                // If user enters invalid value this pop-ups
-                print("user entered invalid values")
+                // If user enters invalid value this alert pop-ups
                 alertMessage(title: "Invaid value", message: "Invalid value specified")
             }
             
         }
         else{
-            // If user does not enter any value this pop-ups
-        print("user not entered values")
-            
+            // If user does not enter any value this  alert pop-ups
             alertMessage(title: "No value", message: "No value specified")
         }
     }

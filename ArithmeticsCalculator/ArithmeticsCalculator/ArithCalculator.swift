@@ -33,7 +33,7 @@ class ArithCalculator {
     }
     
     // using immutable variable shared for the function of ArithCalculator
-  static let shared = ArithCalculator()
+    static let shared = ArithCalculator()
     
     // The gereatestCommonFactor function to find the GCD of the number
     
@@ -51,21 +51,23 @@ class ArithCalculator {
     }
     
     // The leastCommonMultiple function
-        func leastCommonMultiple(a:Int,b:Int) -> Int{
+    func leastCommonMultiple(a:Int,b:Int) -> Int{
             
-            let lcm:Int = (a*b)/(greatestCommonFactor(a: a, b: b))
-            return lcm;
-        }
+        let lcm:Int = (a*b)/(greatestCommonFactor(a: a, b: b))
+        return lcm;
+    }
     
     // the Factorial function
     func factorial(num:Int) -> Int64{
         
-//        if (num >= 1){
-//            return num * factorial(num: num-1);
-//        }else{
-//            return 1;
-//        }
+        // output is long number
         var out:Int64 = 1;
+        
+        // zero factorial is 1
+        if(num == 0){
+            return out;
+        }
+        
         for n in 1...num {
             out = out * Int64(n);
         }
@@ -83,11 +85,12 @@ class ArithCalculator {
         return squareRoot
     }
     
-// The history function
+    // The history function
     func history(query:String,answer:String){
         
         Results.append(Result(query: query, answer: answer));
     }
+    
     // The function for results
     func results (index:Int) -> Result{
         return Results[index]

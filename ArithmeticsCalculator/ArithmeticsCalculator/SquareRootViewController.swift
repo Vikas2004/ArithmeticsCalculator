@@ -37,13 +37,16 @@ class SquareRootViewController: UIViewController {
             if let num = Double(numTF.text!){
                 
                 if(num>=0){
-                let answer:Double = ArithCalculator.shared.squareRoot(num: num)
-                
-                let answerText: String = "Answer: \(answer)";
+                    
+                    let answer:Double = ArithCalculator.shared.squareRoot(num: num)
+                    
+                    let answerText: String = "Answer: \(answer)";
+                        
                     answerLBL.text = answerText
-                
-                let query: String = "Square root of  \(num)"
-                ArithCalculator.shared.history(query: query, answer: answerText)
+                    
+                    let query: String = "Square root of  \(num)"
+                    ArithCalculator.shared.history(query: query, answer: answerText)
+                    
                 }else{
                     // If user enters negative number this alert pop-ups
                     alertMessage(title: "Negative number", message: "Invalid value specified")
@@ -51,16 +54,13 @@ class SquareRootViewController: UIViewController {
                     
                 
             }else{
-                // If user enters invalid value this pop-ups
-                print("user entered invalid values")
+                // If user enters invalid value this alert pop-ups
                 alertMessage(title: "Invaid value", message: "Invalid value specified")
             }
             
         }
         else{
-            // If user does not enter any value this pop-ups
-        print("user not entered values")
-            
+            // If user does not enter any value this alert pop-ups
             alertMessage(title: "No value", message: "No value specified")
         }
     }

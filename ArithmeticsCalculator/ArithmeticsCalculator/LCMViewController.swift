@@ -36,26 +36,25 @@ class LCMViewController: UIViewController {
         if (firstNumTF.text != "") && (secondNumTF.text != ""){
             
             if let firstNum = Int(firstNumTF.text!), let secondNum:Int = Int(secondNumTF.text!){
+                
                 let answer:Int = ArithCalculator.shared.leastCommonMultiple(a: firstNum, b: secondNum)
 
                 let answerText: String = "Answer: \(answer)";
                     answerLBL.text = answerText
                 
                 let query: String = "LCM of two numbers \(firstNum)&\(secondNum)"
+                //Storing data to history
                 ArithCalculator.shared.history(query: query, answer: answerText)
                     
                 
             }else{
-                // If user enters invalid value this pop-ups
-                print("user entered invalid values")
+                // If user enters invalid value this alert pop-ups
                 alertMessage(title: "Invaid value", message: "Invalid value specified")
             }
             
         }
         else{
-            // If user does not enter any value this pop-ups
-        print("user not entered values")
-            
+            // If user does not enter any value this  alert pop-ups
             alertMessage(title: "No value", message: "No value specified")
         }
     }
