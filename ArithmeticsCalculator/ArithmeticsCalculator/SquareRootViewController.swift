@@ -8,9 +8,10 @@
 
 import UIKit
 
+// The UIViewController for the Square Root
 class SquareRootViewController: UIViewController {
     
-    
+    // The UITextFiels and UILabel
     @IBOutlet weak var numTF: UITextField!
     @IBOutlet weak var answerLBL: UILabel!
 
@@ -20,7 +21,7 @@ class SquareRootViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    // The Alert Message function
     func alertMessage(title:String, message:String){
         let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -28,7 +29,7 @@ class SquareRootViewController: UIViewController {
         self.present(ac,animated: true, completion: nil)
     }
     
-    
+    // The calculate function for the calculate button
     @IBAction func calculate(_ sender: Any) {
         
         if (numTF.text != ""){
